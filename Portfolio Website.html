@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Garima's Data Science Portfolio</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .navbar-bio {
+            background: linear-gradient(to right, #c9a7f7, #a1c4fd);
+            color: #ffffff;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 0px 5px 5px -5px #333;  
+            
+        }
+        .bio{
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally and vertically */
+        }
+
+        #about {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .bio-text {
+            padding: 70px;
+            font-size: 50px;
+            text-align: center;
+        }
+        .bio-subtext {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .more-about-me-btn {
+            background: #c9a7f7;
+            margin: 50px auto 0; /* Center-align the button */
+        }
+
+        #projects {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .progress-bar {
+            height: 20px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #c9a7f7, #a1c4fd);
+            color: black;
+            text-align: right;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .footer-btn {
+            margin-left: 10px;
+        }
+        .footer-btns{
+            align-items: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar and Bio Section -->
+    <div class="navbar-bio">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Garima's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#bio">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Bio/Introduction Section -->
+        <div class ="bio">
+        <div class="container" id="bio">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h1 class = bio-text>Hello, I’m Garima</h1>
+
+                    <p class="bio-subtext">I’m a passionate data scientist dedicated to unraveling insights from vast datasets. </p>
+                    <p class="bio-subtext"> Currently MS in Data Science Student at Texas A&M University.</p>
+                <div class="col-md-12 text-center">
+                    <a href="#about" class="btn btn-primary more-about-me-btn">More About Me</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="about">
+    <div class="container" id="about">
+        <!-- About Me Section -->
+            <div class="col-md-12">
+                <h1>About Me</h1>
+                <br>
+                <br>
+                <p>Currently pursuing my Data Science degree at Texas A&M University, I transitioned from a software developer role to specialize in data science. Proficient in programming, machine learning model development, and data analytics, I believe in the transformative power of data when applied strategically. My aspiration is to become a successful full-stack data scientist, leveraging data-driven solutions to drive growth for individuals and organizations. As a data-driven professional, I thrive on fostering innovation and addressing real-world challenges through analytics. I enjoy collaborating with talented individuals, employing cutting-edge technologies, and contributing to the creation of exceptional products. Open to collaboration or a friendly chat? Don't hesitate to reach out – I'd love to connect and explore potential opportunities.</p>
+            </div>
+    </div>
+    </div>
+    <div id ="projects">
+    <div class="container">
+        <!-- Projects Section -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Projects</h1>
+                <p>Explore my portfolio featuring impactful projects where I've leveraged programming, machine learning models, and data analytics. Uncover the stories behind each project, the tools employed, and the tangible outcomes achieved. Dive into the world of data-driven solutions.</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="https://media.istockphoto.com/id/498214865/photo/mislead-inform-keys-shows-misleading-or-informative-advice.jpg?s=612x612&w=0&k=20&c=XsMI9aJNKIu0mqyuA2edQsesw2PXmrlGHxxu9Z7iPXs=" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Automated Web Credibility and Genre Prediction</h5>
+                            <p class="card-text">Developed a automated tool that analyzes page content to assess credibility by genre, using Random Forest for classification and regression to score trustworthiness with 75% accuracy</p>
+                            <!-- Link to your project URL -->
+                            <a href="https://github.com/garimabadhan/Webpage_Credibility_Genre_Prediction" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://miro.medium.com/v2/resize:fit:675/1*cwukaTJPlp5GFd8twISZqQ.jpeg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sign Language Recognition</h5>
+                            <p class="card-text">Created a hybrid Recurrent Neural Networks (RNN) and Convolutional Neural Networks (CNN) model, achieving over 93% accuracy in facilitating seamless communication for differently-abled individuals</p>
+                            <!-- Link to your project URL -->
+                            <a href="https://github.com/garimabadhan/Sign_Language_KNN" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://assets-global.website-files.com/614c82ed388d53640613982e/64f7989c55786e5b4de9b9cb_sentiment-analysis-explained.webp" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazon Product Review Sentiment Analysis</h5>
+                            <p class="card-text">Extracted actionable insights on consumer preferences from Amazon review data by developing a highly accurate SVM-based sentiment analysis model with 90% accurate consumer behavior insights</p>
+                            <!-- Link to your project URL -->
+                            <a href="https://github.com/garimabadhan/Sentimental_Analysis" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section (Footer) -->
+    <footer>
+        <div class="container" id="contact">
+            <div class="footer-btns">
+            <a href="get_in_touch.html" class="btn btn-success footer-btn">Get in Touch</a>
+            <a href="/Volumes/Drive B/Resume/General/New Resume/Resume_GarimaBadhan.pdf" class="btn btn-secondary footer-btn" download>Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
