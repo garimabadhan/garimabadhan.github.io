@@ -9,11 +9,11 @@
         body {
             background-color: #f8f9fa;
             color: #343a40;
+            font-family: 'Lato', sans-serif;
         }
 
         .navbar-bio {
-            background: linear-gradient(to right, #c9a7f7, #a1c4fd);
-            color: #ffffff;
+            background: linear-gradient(to bottom, #c9a7f7, #f1ebff, #ffffff);
             padding: 20px;
             height: 100vh;
             box-shadow: 0px 5px 5px -5px #333;  
@@ -27,9 +27,15 @@
         }
 
         #about {
-            background-color: #ffffff;
+            background: linear-gradient(to bottom, #f1ebff, #ffffff);
             padding: 50px 20px;
             text-align: center;
+           
+        }
+        .about-text {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .container {
@@ -42,11 +48,15 @@
             padding: 70px;
             font-size: 50px;
             text-align: center;
+            font-weight: bold;
         }
         .bio-subtext {
-            padding: 10px;
-            font-size: 20px;
+            font-size: 18px; /* Adjust the font size as needed */
             text-align: center;
+            margin-bottom: 30px;
+            max-width: 650px; /* Adjust the max-width as needed */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .more-about-me-btn {
@@ -54,10 +64,22 @@
             margin: 50px auto 0; /* Center-align the button */
         }
 
+        .more-about-me-btn:hover {
+            background-color: #cab8f6; /* Lighter shade on hover, adjust if needed */
+        }
         #projects {
-            background-color: #ffffff;
+            background: linear-gradient(to bottom, #f1ebff, #ffffff);
             padding: 50px 20px;
             text-align: center;
+        }
+
+        .resume-btn {
+            background: #c9a7f7;
+            margin: 50px auto 0;
+        }
+
+        .resume-btn:hover {
+            background-color: #cab8f6; /* Lighter shade on hover, adjust if needed */
         }
 
 
@@ -76,7 +98,7 @@
         }
 
         footer {
-            background: linear-gradient(to right, #c9a7f7, #a1c4fd);
+            background: linear-gradient(to top, #c9a7f7, #f1ebff, #ffffff);
             color: black;
             text-align: right;
             padding: 10px 0;
@@ -84,6 +106,18 @@
             bottom: 0;
             display: flex;
             justify-content: flex-end;
+            text-align: right;
+            left: 0;
+            right: 0;
+        }
+
+        .btn-success.footer-btn {
+            background-color: #c9a7f7; /* Pastel purple color */
+            color: #ffffff; /* Text color, you can adjust this if needed */
+        }
+
+        .btn-success.footer-btn:hover {
+            background-color: #cab8f6; /* Lighter shade on hover, adjust if needed */
         }
 
         .footer-btn {
@@ -126,9 +160,12 @@
         <div class="container" id="bio">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <h1 class = bio-text>Hello, I’m Garima</h1>
-
-                    <p class="bio-subtext">I’m a passionate data scientist dedicated to unraveling insights from vast datasets. </p>
+                    <h1 class = bio-text>hey there, I’m Garima</h1>
+                    <div>
+                    <p class="bio-subtext">I’m a passionate data scientist dedicated to unraveling insights from vast datasets. 
+                        I love to explore data to find solutions to real world problems.
+                    </p>
+                    </div>
                     <p class="bio-subtext"> Currently MS in Data Science Student at Texas A&M University.</p>
                 <div class="col-md-12 text-center">
                     <a href="#about" class="btn btn-primary more-about-me-btn">More About Me</a>
@@ -142,10 +179,15 @@
     <div class="container" id="about">
         <!-- About Me Section -->
             <div class="col-md-12">
+            <div class="about-text">
                 <h1>About Me</h1>
                 <br>
-                <br>
                 <p>Currently pursuing my Data Science degree at Texas A&M University, I transitioned from a software developer role to specialize in data science. Proficient in programming, machine learning model development, and data analytics, I believe in the transformative power of data when applied strategically. My aspiration is to become a successful full-stack data scientist, leveraging data-driven solutions to drive growth for individuals and organizations. As a data-driven professional, I thrive on fostering innovation and addressing real-world challenges through analytics. I enjoy collaborating with talented individuals, employing cutting-edge technologies, and contributing to the creation of exceptional products. Open to collaboration or a friendly chat? Don't hesitate to reach out – I'd love to connect and explore potential opportunities.</p>
+            </div>
+            </div>
+            <div class="text-center">
+                <h5> Know more about my experience and skills.</h5>
+                <a href="/Resume_GarimaBadhan.pdf" class="btn btn-primary resume-btn" download>Resume</a>
             </div>
     </div>
     </div>
@@ -187,6 +229,34 @@
                 </div>
             </div>
         </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/921345524/photo/customers-segmented-into-groups.jpg?s=612x612&w=0&k=20&c=U_W6Xd0l_B41LXvVpEmA-Z35W3BTkuzxSRKPn2mQfDY=" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer Segmentation</h5>
+                        <p class="card-text">Built a tool using an unsupervised machine learning model on real-world e-commerce sales data to effectively categorize customers into distinct groups based on different features</p>
+                        <a href="https://github.com/garimabadhan/Customer_Segmentation" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="https://d2908q01vomqb2.cloudfront.net/cb7a1d775e800fd1ee4049f7dca9e041eb9ba083/2023/06/30/genai.jpg" class="card-img-top" alt="Project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">GEN AI</h5>
+                        <p class="card-text">Coming soon!
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                       <!-- <a href="#" class="btn btn-primary">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -196,7 +266,6 @@
         <div class="container" id="contact">
             <div class="footer-btns">
             <a href="get_in_touch.html" class="btn btn-success footer-btn">Get in Touch</a>
-            <a href="/Resume_GarimaBadhan.pdf" class="btn btn-secondary footer-btn" download>Resume</a>
             </div>
         </div>
     </footer>
